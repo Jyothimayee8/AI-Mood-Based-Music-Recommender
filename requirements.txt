@@ -5,4 +5,5 @@ opencv-python==4.7.0.72
 numpy==1.24.4
 protobuf==3.20.0
 httpx == 0.24.1
+opencv-python-headless
 
