@@ -101,10 +101,7 @@ if st.session_state.mood:
                 st.info("No more videos available for this mood/language.")
 else:
     st.info("Click 'Detect Mood From Face' and select language to start playing music.")
-'''
-
-
-'''
+    
 #####USING PICTUREEEE 
 import streamlit as st
 import time
