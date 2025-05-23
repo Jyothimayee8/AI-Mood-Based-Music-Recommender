@@ -6,8 +6,6 @@ def detect_mood_face(frame) -> str:
         resized_frame = cv2.resize(rgb_frame, (640, 480))
         analysis = DeepFace.analyze(resized_frame, actions=["emotion"], enforce_detection=False)
 
-        print("DeepFace result:", analysis)  # 🔍 Debug print
-
         if isinstance(analysis, list):
             analysis = analysis[0]
 
