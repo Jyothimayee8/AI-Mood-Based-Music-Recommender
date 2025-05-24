@@ -8,9 +8,11 @@ def load_feedback():
         try:
             with open(FEEDBACK_FILE, "r") as f:
                 content = f.read().strip()
-                return json.loads(content) if content else {}
+                if not content:
+                    return {}  # File is empty
+                return json.loads(content)
         except json.JSONDecodeError:
-            # If file is corrupted or empty, reset to empty dict
+            # Corrupt JSON: overwrite with empty dict
             return {}
     return {}
 
