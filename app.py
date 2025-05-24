@@ -273,7 +273,7 @@ if st.session_state.mood:
         if st.button("Next Song"):
             st.session_state.videos.pop(0)
             if st.session_state.videos:
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.info("No more videos available for this mood/language.")
 else:
