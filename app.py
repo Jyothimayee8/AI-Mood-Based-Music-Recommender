@@ -23,7 +23,7 @@ if "run_webcam" not in st.session_state:
     st.session_state.run_webcam = False
 
 # Language selector
-language = st.selectbox("Choose your preferred language:", ("English", "Hindi", "Telugu"))
+language = st.selectbox("Choose your preferred language:", ("English", "Hindi", "Telugu","Tamil","Kannada"))
 st.session_state.language = language
 
 def run_webcam_detection():
