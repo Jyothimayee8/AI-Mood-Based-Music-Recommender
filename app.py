@@ -420,6 +420,4 @@ with st.sidebar:
     4. Enjoy music recommendations based on your mood.  
     5. Like or Dislike songs to improve future suggestions.
     6. Use "Next Song" to skip to the next recommended track.
-
-
-
+    """)
