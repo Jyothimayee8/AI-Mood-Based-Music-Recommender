@@ -1,12 +1,17 @@
 import json
 import os
 
-FEEDBACK_FILE = "feedback_data.json"
+FEEDBACK_FILE = "feedback_counter.json"
 
 def load_feedback():
     if os.path.exists(FEEDBACK_FILE):
-        with open(FEEDBACK_FILE, "r") as f:
-            return json.load(f)
+        try:
+            with open(FEEDBACK_FILE, "r") as f:
+                content = f.read().strip()
+                return json.loads(content) if content else {}
+        except json.JSONDecodeError:
+            # If file is corrupted or empty, reset to empty dict
+            return {}
     return {}
 
 def save_feedback(data):
