@@ -554,6 +554,9 @@ st.markdown(
     unsafe_allow_html=True
 )
 '''
+
+
+###############################using picture for global use with design#################################################
 import streamlit as st
 import time
 from mood_detection import detect_mood_face
