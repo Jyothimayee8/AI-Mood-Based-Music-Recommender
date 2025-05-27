@@ -719,7 +719,7 @@ with col1:
     if image_data:
         img = Image.open(image_data)
         frame = np.array(img)
-        st.image(frame, caption="Captured Image", use_container_width=True)
+        #st.image(frame, caption="Captured Image", use_container_width=True)
 
         with st.spinner("Analyzing mood..."):
             mood = detect_mood_face(frame)
