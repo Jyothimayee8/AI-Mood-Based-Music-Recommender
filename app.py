@@ -568,7 +568,7 @@ import numpy as np
 import requests
 
 # --- Page Setup ---
-st.set_page_config(page_title="🎵 AI Mood-Based Music Generator (YouTube)", layout="wide")
+st.set_page_config(page_title="🎵 AI Mood-Based Music Generator using YouTube", layout="wide")
 
 # --- Load Lottie animations ---
 def load_lottie_url(url):
@@ -767,7 +767,7 @@ with col2:
                 else:
                     st.info("No more videos for this mood/language.")
     else:
-        st.info("📸 Please capture a photo and choose a language to continue!")
+        st.info("📸 Please capture a photo after choosing a language to continue!")
 
 st.markdown("---")
 st.markdown("""
